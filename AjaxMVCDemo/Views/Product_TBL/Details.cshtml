@@ -1,0 +1,50 @@
+﻿@model AjaxMVCDemo.Models.Product_TBL
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product_TBL</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Product_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product_category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QTE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QTE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Product_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
